@@ -1,0 +1,115 @@
+body{
+    background-color: #2B2E56;
+ }
+.contanier{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+    margin: 50px;
+    padding: 50px;
+    text-align: center;
+    gap: 10px;
+}
+.children{
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+   
+    background-color: #EC3437 ;   
+    
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#children1{
+    background-color: #6DBE4F;
+    grid-column:  1 / 2 ;
+    grid-row: 1 / 4;  
+}
+#children2{
+    background-color: #6DBE4F;
+    grid-column:  2 / 4 ;
+    grid-row: 1 / 2 ;  
+}
+#children3{
+    background-color:  #EC3437 ;
+    grid-column: 4 / 5 ;
+    grid-row: -4 / -3 ;  
+}
+#children6{
+    background-color: #6DBE4F;
+    grid-column: 4 / 5 ;
+    grid-row: -3 / -1 ;  
+}
+#children4{
+    background-color: #FBB22F;
+}
+
+#children8{
+    background-color: #FBB22F;
+}
+@media(max-width: 700px){
+    .contanier{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows:repeat(4 , 50px);
+        margin: 50px;
+        padding: 50px;
+        text-align: center;
+        gap: 10px;
+    }
+    #children1{
+        background-color: #6DBE4F;
+        grid-column:   ;
+        grid-row: auto;  
+    }
+    #children2{
+        background-color: #6DBE4F;
+        grid-column:  auto ;
+        grid-row: auto;  
+    }
+    #children3{
+        background-color:  #EC3437 ;
+        grid-column: auto ;
+        grid-row: auto ;  
+    }
+    #children6{
+        background-color: #6DBE4F;
+        grid-column: auto ;
+        grid-row: auto;  
+    
+
+}
+@media(max-width: 500px){
+    .contanier{
+        display: grid;
+        grid-template-columns:  1fr ;
+        grid-template-rows:repeat(8 , 50px);
+        margin: 50px;
+        padding: 50px;
+        text-align: center;
+        gap: 10px;
+    }
+    #children1{
+        background-color: #6DBE4F;
+        grid-column:   ;
+        grid-row: auto;  
+    }
+    #children2{
+        background-color: #6DBE4F;
+        grid-column:  auto ;
+        grid-row: auto;  
+    }
+    #children3{
+        background-color:  #EC3437 ;
+        grid-column: auto ;
+        grid-row: auto ;  
+    }
+    #children6{
+        background-color: #6DBE4F;
+        grid-column: auto ;
+        grid-row: auto;  
+    
+
+}
